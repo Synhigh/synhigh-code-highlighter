@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Code Highlighter demo</title>
+	<link rel="stylesheet" href="dists/css/synhigh.css">
+	<style>
+		body {
+			font-family: system-ui, sans-serif;
+			max-width: 760px;
+			margin: 2rem auto;
+			padding: 0 1rem
+		}
+	</style>
+</head>
+
+<body>
+	<h1 style="text-align: center;">Synhigh Code Highlighter</h1>
+
+	<p>Language from a class:</p>
+	<pre><code class="language-python">def greet(name: str) -> str:
+    # say hello
+    return f"Hello, {name}!"
+</code></pre>
+
+	<p>No class, so the language is detected automatically:</p>
+	<pre><code>#include &lt;stdio.h&gt;
+int main(void) {
+    printf("hi %d\n", 42);
+    return 0;
+}</code></pre>
+
+	<p>Mixed HTML with embedded CSS and JS:</p>
+	<pre><code class="language-html">&lt;style&gt;
+	.btn { 
+		color: #fff; 
+	}
+&lt;/style&gt;
+&lt;button class="btn" id="go"&gt;Go&lt;/button&gt;
+&lt;script&gt;
+  document.getElementById("go").onclick = () =&gt; console.log("clicked");
+&lt;/script&gt;</code></pre>
+
+	<p style="text-align: center;">
+		Created by ❤️ and 🍵
+		</br>
+		Raymond Baghumian
+	</p>
+
+	<!-- Optional settings; must come BEFORE synhigh.js -->
+	<script>
+		window.SynhighConfig = {
+			theme: 'auto',          // auto | dark | light | ember | your own
+			lineNumbers: true,
+			copyButton: true,
+			selector: 'pre code'    // which blocks to process
+		};
+	</script>
+	<script src="dists/js/synhigh.js" defer></script>
+</body>
+
+</html>
