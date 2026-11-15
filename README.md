@@ -27,7 +27,11 @@ A small, dependency-free syntax highlighter for the web. Plain JavaScript and CS
 3. Write code blocks as usual:
 
 ```html
-<pre><code class="language-php">&lt;?php echo "Hello"; ?&gt;</code></pre>
+<pre>
+    <code class="language-php">
+        <?php echo "Hello"; ?>
+    </code>
+</pre>
 ```
 
 Open `index.html` in this folder for a working demo.
